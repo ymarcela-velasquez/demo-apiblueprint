@@ -1,0 +1,672 @@
+# Group aps
+
+
+
+
+## PATCH: http://localhost:3000/surveys/data/5df15fe1d27b2e60abc7568c [/surveys/data/5babf5f1428d8f2a2623d2db]
+
+### PATCH: http://localhost:3000/surveys/data/5df15fe1d27b2e60abc7568c [PATCH]
+
+DESCRIPTION
+
++ Request
+
+    + Headers
+            
+            Content-Type: application/json
+            Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjdjODBmN2IyODE2MDQ4OTU2ZTE3MmQiLCJ1c2VybmFtZSI6Im1lbGlzYS5iZXRhbmN1cnAiLCJuYW1lIjoiTWVsaXNhIiwibGFzdG5hbWUiOiJCZXRhbmN1ciBQYWxhY2lvIiwiY29tcGFueSI6IlNTTSIsInByb2plY3RJZCI6IjViNjM3ZWViNDQ2YjI0YTViZjQyMWEyMCIsInJvbGVzIjpbImh5Z2llbmlzdCJdLCJjbGFpbXMiOnsiY2VsbHBob25lIjoiMzAxNTUzNjYwNCIsImRvY3VtZW50IjoiMTAzNTQyNzQwNiJ9LCJpYXQiOjE1NzYwODE0NTgsImV4cCI6MTU3NjY4NjI1OCwiYXVkIjoibmV0dXhjbG91ZC5jb20iLCJpc3MiOiJueGxvZ2luLm5ldHV4Y2xvdWQuY29tIn0.9UonOPtkuShsuDrrRX5XMlmGdYcnY_o4xRMZyTvOb7Q
+    
+    + Body
+
+    	    {
+                "assistForm": {
+                    "postForm": {
+                        "impresionCodigo": "",
+                        "tipoOrientacion": "",
+                        "desarrollo": "",
+                        "logros": ""
+                    },
+                    "responses": {
+                        "assistg1p1": "3",
+                        "assistg1p2": "3",
+                        "assistg1p4": "3"
+                    },
+                    "assistAlcoholResult": "3",
+                    "assistOtherResult": 6,
+                    "attentionDate": "2019-11-22 12:00 am",
+                    "interventions": [
+                        "8",
+                        "9",
+                        "11",
+                        "12"
+                    ],
+                    "professionalcard": "111111",
+                    "state": "pending",
+                    "completionDate": "2019-12-11T15:07:01.007Z"
+                }
+            }
+    
+
++ Response 200 (application/json)
+
+    + Headers
+            
+            NAME: VALUE
+
+    + Body
+
+            <!-- include(responses/surveys/data/patch-200-5babf5f1428d8f2a2623d2db.json) -->
+
+
+
+
+
+## POST: routeActivation. http://localhost:3000/canalizations/5df3ad1b41f13a39d10d7f89 [/canalizations/5df8d53527ad2728d655c05a]
+
+### POST: routeActivation. http://localhost:3000/canalizations/5df3ad1b41f13a39d10d7f89 [POST]
+
+DESCRIPTION
+
++ Request
+
+    + Headers
+            
+            Content-Type: application/json
+            Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjdjODBkNGIyODE2MDQ4OTU2ZTE3MDciLCJ1c2VybmFtZSI6ImR1YmFuLnZhbmVnYXMiLCJuYW1lIjoiRHViYW4iLCJsYXN0bmFtZSI6IlZhbmVnYXMiLCJjb21wYW55IjoiU1NNIiwicHJvamVjdElkIjoiNWI2MzdlZWI0NDZiMjRhNWJmNDIxYTIwIiwicm9sZXMiOlsicHN5Y2hvbG9naXN0Il0sImNsYWltcyI6eyJjZWxscGhvbmUiOiIzMTE3MTY3Njc1IiwiZG9jdW1lbnQiOiIxMDM1MjI1NDQwIn0sImlhdCI6MTU3NjE2NzM2NiwiZXhwIjoxNTc2NzcyMTY2LCJhdWQiOiJuZXR1eGNsb3VkLmNvbSIsImlzcyI6Im54bG9naW4ubmV0dXhjbG91ZC5jb20ifQ.zalDBNtE4CyyrcV3eAd46TTD7X_fwKL1DDRS0EoqyMA
+    
+    + Body
+
+    	    {
+                "canalizations": [
+                    {
+                        "eps": "5b7d6075d5cc373394599247",
+                        "person": "5b7d61bd93af53a2b61b58be",
+                        "attentionDate": "2019-12-11 12:00 am",
+                        "risk": {
+                            "routeActivationType": "Activación de ruta",
+                            "description": "Conducta suicida",
+                            "type": "NA"
+                        },
+                        "followup": {
+                            "attentionDate": "2019-12-11 12:00 am"
+                        }
+                    }
+                ]
+            }
+
+
+    
+
++ Response 200 (application/json)
+
+    + Headers
+            
+            NAME: VALUE
+
+    + Body
+
+            <!-- include(responses/canalizations/post-200-5df8d53527ad2728d655c05a.json) -->
+
+
+
+
+
+## GET: canalizaciones de una survey. http://localhost:3000/canalizations/?survey=5df7968f3b05f02154193222 [/canalizations/{?survey}]
+
+### GET: canalizaciones de una survey. http://localhost:3000/canalizations/?survey=5df7968f3b05f02154193222 [GET]
+
+DESCRIPTION
+
++ Parameters
+
+    + survey (string, required) - DESCRIPTION
+    
++ Request
+
+    + Headers
+            
+    
+
++ Response 200 (application/json)
+
+    + Headers
+            
+            NAME: VALUE
+
+    + Body
+
+            <!-- include(responses/canalizations/get-200-.json) -->
+
+
+
+
+
+## PATCH: BriefInterventions. http://localhost:3000/surveys/data/5df15fe1d27b2e60abc7568c [/surveys/5e42c453df8dee470a173f33]
+
+### PATCH: BriefInterventions. http://localhost:3000/surveys/data/5df15fe1d27b2e60abc7568c [PATCH]
+
+DESCRIPTION
+
++ Request
+
+    + Headers
+            
+            Content-Type: application/json
+            Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjdjODBkNGIyODE2MDQ4OTU2ZTE3MDciLCJ1c2VybmFtZSI6ImR1YmFuLnZhbmVnYXMiLCJuYW1lIjoiRHViYW4iLCJsYXN0bmFtZSI6IlZhbmVnYXMiLCJjb21wYW55IjoiU1NNIiwicHJvamVjdElkIjoiNWI2MzdlZWI0NDZiMjRhNWJmNDIxYTIwIiwicm9sZXMiOlsicHN5Y2hvbG9naXN0Il0sImNsYWltcyI6eyJjZWxscGhvbmUiOiIzMTE3MTY3Njc1IiwiZG9jdW1lbnQiOiIxMDM1MjI1NDQwIn0sImlhdCI6MTU4MTEwNjEyMSwiZXhwIjoxNTgxNzEwOTIxLCJhdWQiOiJuZXR1eGNsb3VkLmNvbSIsImlzcyI6Im54bG9naW4ubmV0dXhjbG91ZC5jb20ifQ.9i2oE-flDrPKnh0Mco3uBQ7wNBjrU_3Fv5bVjgPD-Rc
+    
+    + Body
+
+    	    {
+                "data": {
+                    "initialForm": {
+                        "preForm": {
+                            "firstnameAcudiente": "dd",
+                            "lastnameAcudiente": "dd",
+                            "parentesco": "",
+                            "tipologiaFamiliar": "",
+                            "areaConflicto": "si-mismo",
+                            "motivoOrientacion": "",
+                            "metaOrientación": "",
+                            "descripcionConflicto": "",
+                            "habilidadSaludable": ""
+                        },
+                        "postForm": {
+                            "impresionCodigo": "",
+                            "tipoOrientacion": "",
+                            "desarrollo": "",
+                            "logros": ""
+                        },
+                        "responses": {
+                            "preguntap1": "no",
+                            "preguntap3": "si",
+                            "preguntap4": "si",
+                            "preguntag1p5": "dd",
+                            "preguntag1p6": "si",
+                            "preguntag1p7": "si",
+                            "preguntag1p8": "si",
+                            "preguntag1p9": "si",
+                            "preguntag1p10": "no",
+                            "preguntag1p11": "si",
+                            "preguntag1p12": "si",
+                            "preguntag1p13": "si",
+                            "preguntag1p14": "1",
+                            "preguntag1p15": "1"
+                        },
+                        "attentionDate": "2020-02-11T15:12:00.000Z",
+                        "professionalcard": "444333",
+                        "interventions": [
+                            "1-3-4-positiva",
+                            "6-positiva",
+                            "7-11-14-positiva",
+                            6,
+                            "12-positiva",
+                            "15-positiva"
+                        ],
+                        "state": "ended",
+                        "completionDate": "2020-02-11T15:14:24.017Z",
+                        "createdBy": "desarrollo@netuxtecnologia.com"
+                    },
+                    "briefInterventions": {
+                        "briefIntervention1": {
+                            "tipoOrientacion": "priorizada",
+                            "desarrollo": "ss",
+                            "logros": "ss",
+                            "attentionDate": "2020-02-11T15:15:00.000Z",
+                            "seguimiento": "Se resolvió el caso",
+                            "createdBy": "desarrollo@netuxtecnologia.com",
+                            "completionDate": "2020-02-11T15:16:01.490Z"
+                        },
+                        "briefIntervention2": {
+                            "tipoOrientacion": "priorizada",
+                            "desarrollo": "ss",
+                            "logros": "ss",
+                            "attentionDate": "2020-02-11T15:15:00.000Z",
+                            "seguimiento": "Se resolvió el caso",
+                            "createdBy": "desarrollo@netuxtecnologia.com",
+                            "completionDate": "2020-02-11T15:16:01.490Z"
+                        },
+                        "briefIntervention3": {
+                            "tipoOrientacion": "priorizada",
+                            "desarrollo": "ss",
+                            "logros": "ss",
+                            "attentionDate": "2020-02-11T15:15:00.000Z",
+                            "seguimiento": "Se resolvió el caso"
+                        }
+                    }
+                }
+            }
+    
+
++ Response 200 (application/json)
+
+    + Headers
+            
+            NAME: VALUE
+
+    + Body
+
+            <!-- include(responses/surveys/patch-200-5e42c453df8dee470a173f33.json) -->
+
+
+
+
+
+## GET: Validación fecha de última HC de una persona. http://localhost:3000/healthRecords/person/5cabce4ac75a4240c89dadfe [/healthRecords/person/5ba51da74c0d0272e0e29515]
+
+### GET: Validación fecha de última HC de una persona. http://localhost:3000/healthRecords/person/5cabce4ac75a4240c89dadfe [GET]
+
+Se valida si a una persona se le puede realizar un procedimiento y generar una HC de acuerdo a la fecha del último procedimiento realizado.
+Si se puede practicar &#34;allowed&#34; es true, de lo contrario será false.
+
++ Request
+
+    + Headers
+            
+            Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjdjODBmN2IyODE2MDQ4OTU2ZTE3MmQiLCJ1c2VybmFtZSI6Im1lbGlzYS5iZXRhbmN1cnAiLCJuYW1lIjoiTWVsaXNhIiwibGFzdG5hbWUiOiJCZXRhbmN1ciBQYWxhY2lvIiwiY29tcGFueSI6IlNTTSIsInByb2plY3RJZCI6IjViNjM3ZWViNDQ2YjI0YTViZjQyMWEyMCIsInJvbGVzIjpbImh5Z2llbmlzdCJdLCJjbGFpbXMiOnsiY2VsbHBob25lIjoiMzAxNTUzNjYwNCIsImRvY3VtZW50IjoiMTAzNTQyNzQwNiJ9LCJpYXQiOjE1ODAyMzc4MTYsImV4cCI6MTU4MDg0MjYxNiwiYXVkIjoibmV0dXhjbG91ZC5jb20iLCJpc3MiOiJueGxvZ2luLm5ldHV4Y2xvdWQuY29tIn0.DS-3ToqsOWGOEjz_U4Mq5tbgJkTPxWezyaxWh770t-0
+    
+
++ Response 200 (application/json)
+
+    + Headers
+            
+            NAME: VALUE
+
+    + Body
+
+            <!-- include(responses/healthRecords/person/get-200-5ba51da74c0d0272e0e29515.json) -->
+
+
+
+
+
+## POST: crear HC. http://localhost:3000/healthRecords [/healthRecords]
+
+### POST: crear HC. http://localhost:3000/healthRecords [POST]
+
+DESCRIPTION
+
++ Request
+
+    + Headers
+            
+            Content-Type: application/json
+    
+    + Body
+
+    	    {
+                "survey": "5e39d0b3de135d5660837c80",
+                "person": {
+                    "_id": "5df93ec6f1b746b20038bba7",
+                    "document": "00102952587",
+                    "documentType": "RC",
+                    "birthdate": "2000-10-29T00:00:00.000Z",
+                    "createdAt": "2019-12-17T20:47:02.246Z",
+                    "firstname": "MARIA",
+                    "lastname": "YEPES",
+                    "middlename": "FERNANDA",
+                    "origin": "ssm",
+                    "secondLastname": "PARELA",
+                    "sex": "F",
+                    "socialSecurity": {
+                        "eps": "5b7d6073d5cc373394599243",
+                        "epsCode": "EPS016",
+                        "insuranceScheme": "Contributivo",
+                        "typeOfAffiliation": "B"
+                    },
+                    "updatedAt": "2020-02-04T20:11:37.134Z",
+                    "phoneNumbers": {
+                        "home": "4488554"
+                    },
+                    "address": "CLL 103# 48A-80",
+                    "birthplace": "Medellin",
+                    "civilStatus": "0",
+                    "educationLevel": "7",
+                    "neighborhood": "Medellin",
+                    "occupationCode": "3",
+                    "ageInDays": 7037,
+                    "ageInYears": 19,
+                    "ageInMonths": 231,
+                    "type": [
+                        "F",
+                        "J1"
+                    ]
+                },
+                "healthRecord": {
+                    "deleted": false,
+                    "type": "HCFP",
+                    "data": {
+                        "reasonConsultation": {
+                            "reasonConsultation": "Toma de muestra de citología",
+                            "currentIllness": "na"
+                        },
+                        "gynecoObstetricHistory": {
+                            "menarcheAge": "13",
+                            "menstrualCycles": "irregulares",
+                            "menstrualPain": "mestrual",
+                            "fum": "2014-05-06",
+                            "g": "1",
+                            "p": "-1",
+                            "a": "-1",
+                            "c": "-1",
+                            "v": "1",
+                            "m": "-1",
+                            "lactating": "no",
+                            "exclusivebBreastFeeding": "no",
+                            "usedMac": "AOC"
+                        },
+                        "sample": {
+                            "signConsent": "si",
+                            "processDescription": "fffff"
+                        },
+                        "contraceptiveMethods": {
+                            "selectedMac": "jadelle"
+                        }
+                    },
+                    "createdBy": "desarrollo@netuxtecnologia.com",
+                    "createdByFullName": "Desarrollo ",
+                    "createdByDocument": "NA",
+                    "attentionDate": "2020-01-30T16:54:15.875Z"
+                },
+                "signature": "5d892fa0f9d7a82c8db0bbd5",
+                "createdAt": "2020-01-07T16:56:24.774Z",
+                "updatedAt": "2020-01-07T16:56:24.774Z",
+                "__v": 0
+            }
+    
+
++ Response 200 (application/json)
+
+    + Headers
+            
+            NAME: VALUE
+
+    + Body
+
+            <!-- include(responses/post-200-healthRecords.json) -->
+
+
+
+
+
+## GET: getCountries. http://localhost:3000/countries [/countries]
+
+### GET: getCountries. http://localhost:3000/countries [GET]
+
+DESCRIPTION
+
++ Request
+
+    + Headers
+            
+    
+
++ Response 200 (application/json)
+
+    + Headers
+            
+            NAME: VALUE
+
+    + Body
+
+            <!-- include(responses/get-200-countries.json) -->
+
+
+
+
+
+## POST: crear persona. http://localhost:3000/persons [/persons]
+
+### POST: crear persona. http://localhost:3000/persons [POST]
+
+DESCRIPTION
+
++ Request
+
+    + Headers
+            
+            Content-Type: application/json
+    
+    + Body
+
+    	    {
+                "firstname": "Prueba",
+                "middlename": "hhh",
+                "lastname": "Perez",
+                "secondLastname": "hhh",
+                "documentType": "CC",
+                "document": "674521243",
+                "sex": "F",
+                "birthdate": "2004-06-02T00:00:00.000Z",
+                "zone": "U",
+                "phoneNumbers": {
+                    "home": "5565678"
+                },
+                "socialSecurity": {
+                    "eps": "5b886419de510f2d71f8ef33",
+                    "insuranceScheme": "Subsidiado",
+                    "epsCode": "EPSI01",
+                    "type": "A"
+                },
+                "birthCountryCode": "1",
+                "isoCountryCode": "630",
+                "createdAt": "2020-01-15T18:26:26.213Z",
+                "updatedAt": "2020-01-15T18:26:26.213Z",
+                "__v": 0
+            }
+    
+
++ Response 200 (application/json)
+
+    + Headers
+            
+            NAME: VALUE
+
+    + Body
+
+            <!-- include(responses/post-200-persons.json) -->
+
+
+
+
+
+## PATCH: editar persona cuando se agrega a una visita. http://localhost:3000/persons/5cbe06cbc75a4240c89ddbf3 [/persons/5e21a959efa0220ea848e9ca]
+
+### PATCH: editar persona cuando se agrega a una visita. http://localhost:3000/persons/5cbe06cbc75a4240c89ddbf3 [PATCH]
+
+DESCRIPTION
+
++ Request
+
+    + Headers
+            
+            Content-Type: application/json
+    
+    + Body
+
+    	    {
+                "address": "CR 51B 119 83",
+                "zone": "U",
+                "neighborhood": "MEDELLIN",
+                "phoneNumbers": {
+                    "home": "5565678"
+                },
+                "socialSecurity": {
+                    "eps": "5b886419de510f2d71f8ef33",
+                    "insuranceScheme": "Subsidiado",
+                    "epsCode": "EPSI01",
+                    "type": "A"
+                },
+                "birthCountryCode": "1",
+                "isoCountryCode": "124"
+            }
+    
+
++ Response 200 (application/json)
+
+    + Headers
+            
+            NAME: VALUE
+
+    + Body
+
+            <!-- include(responses/persons/patch-200-5e21a959efa0220ea848e9ca.json) -->
+
+
+
+
+
+## POST: crear persona cuando se va iniciar una encuesta. http://localhost:3000/persons/create_with_survey [/persons/create_with_survey]
+
+### POST: crear persona cuando se va iniciar una encuesta. http://localhost:3000/persons/create_with_survey [POST]
+
+DESCRIPTION
+
++ Request
+
+    + Headers
+            
+            Content-Type: application/json
+    
+    + Body
+
+    	    {
+                "person": {
+                    "firstname": "Prueba",
+                    "middlename": "hhh",
+                    "lastname": "Perez",
+                    "secondLastname": "hhh",
+                    "documentType": "CC",
+                    "document": "674128453",
+                    "sex": "F",
+                    "birthdate": "2004-06-02T00:00:00.000Z",
+                    "zone": "U",
+                    "phoneNumbers": {
+                        "home": "5565678"
+                    },
+                    "socialSecurity": {
+                        "eps": "5b886419de510f2d71f8ef33",
+                        "insuranceScheme": "Subsidiado",
+                        "epsCode": "EPSI01",
+                        "type": "A"
+                    },
+                    "birthCountryCode": "900",
+                    "isoCountryCode": "124"
+                },
+                "survey": {
+                    "environment": "Educative",
+                    "entity": "5b7d5f92d5cc3733945991d1",
+                    "visitIndex": "0",
+                    "dimension": "SM"
+                }
+            }
+    
+
++ Response 200 (application/json)
+
+    + Headers
+            
+            NAME: VALUE
+
+    + Body
+
+            <!-- include(responses/persons/post-200-create_with_survey.json) -->
+
+
+
+
+
+## POST: Crear canalización. http://localhost:3000/canalizations [/canalizations]
+
+### POST: Crear canalización. http://localhost:3000/canalizations [POST]
+
+DESCRIPTION
+
++ Request
+
+    + Headers
+            
+            Content-Type: application/json
+    
+    + Body
+
+    	    {
+                "healthRecords": {
+                    "0": "5e25a57626c54811943534e2"
+                },
+                "canalizations": {
+                    "0": {
+                        "person": "5b86c754de510f2d71f8e5a7",
+                        "maxTimeAppointment": "20d",
+                        "maxTimeEpsResponse": "NA",
+                        "risk": {
+                            "canalizationType": "Canalización salud bucal",
+                            "description": "Signos de caries visibles, dolor dental, sangrado o dolor en las encias",
+                            "type": "Medio"
+                        }
+                    },
+                    "state": "ended",
+                    "explanatoryNotes": [],
+                    "collaborators": []
+                },
+                "state": "ended",
+                "sn": 3,
+                "explanatoryNotes": [],
+                "collaborators": [],
+                "person": {
+                    "_id": "5b86c754de510f2d71f8e5a7",
+                    "phoneNumbers": {
+                        "home": "5556666"
+                    },
+                    "firstname": "Helen",
+                    "middlename": "Julieth",
+                    "lastname": "Vega",
+                    "secondLastname": "Parra",
+                    "documentType": "CE",
+                    "document": "04893110",
+                    "sex": "F",
+                    "birthdate": "2011-05-05T00:00:00.000Z",
+                    "address": "Cra 28# 71-9",
+                    "commune": 3,
+                    "neighborhood": "Manrique Oriental",
+                    "createdAt": "2018-08-29T16:18:28.986Z",
+                    "updatedAt": "2020-01-17T20:59:33.901Z",
+                    "educationLevel": 3,
+                    "ethnicGroup": "OT",
+                    "ocupationCode": 9999,
+                    "ageInDays": 3179,
+                    "ageInYears": 8,
+                    "ageInMonths": 104,
+                    "type": [
+                        "F",
+                        "I",
+                        "NG"
+                    ]
+                },
+                "entity": {},
+                "visitIndex": 6,
+                "dimension": "SB",
+                "environment": "Educative",
+                "createdBy": "desarrollo@netuxtecnologia.com",
+                "data": {},
+                "personCharacterization": {},
+                "createdAt": "2020-01-20T13:00:43.619Z",
+                "updatedAt": "020-01-20T13:04:54.536Z",
+                "_v": 3,
+                "endedDate": "020-01-20T13:04:54.499Z"
+            }
+    
+
++ Response 200 (application/json)
+
+    + Headers
+            
+            NAME: VALUE
+
+    + Body
+
+            <!-- include(responses/post-200-canalizations.json) -->
+
+
+
+
+

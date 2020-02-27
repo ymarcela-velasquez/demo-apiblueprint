@@ -1,0 +1,386 @@
+{
+	"info": {
+		"_postman_id": "07375e8d-b7aa-4457-809c-0380fa7b6e48",
+		"name": "aps",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PATCH: http://localhost:3000/surveys/data/5df15fe1d27b2e60abc7568c",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjdjODBmN2IyODE2MDQ4OTU2ZTE3MmQiLCJ1c2VybmFtZSI6Im1lbGlzYS5iZXRhbmN1cnAiLCJuYW1lIjoiTWVsaXNhIiwibGFzdG5hbWUiOiJCZXRhbmN1ciBQYWxhY2lvIiwiY29tcGFueSI6IlNTTSIsInByb2plY3RJZCI6IjViNjM3ZWViNDQ2YjI0YTViZjQyMWEyMCIsInJvbGVzIjpbImh5Z2llbmlzdCJdLCJjbGFpbXMiOnsiY2VsbHBob25lIjoiMzAxNTUzNjYwNCIsImRvY3VtZW50IjoiMTAzNTQyNzQwNiJ9LCJpYXQiOjE1NzYwODE0NTgsImV4cCI6MTU3NjY4NjI1OCwiYXVkIjoibmV0dXhjbG91ZC5jb20iLCJpc3MiOiJueGxvZ2luLm5ldHV4Y2xvdWQuY29tIn0.9UonOPtkuShsuDrrRX5XMlmGdYcnY_o4xRMZyTvOb7Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"assistForm\": {\n\t\t\"postForm\": {\n\t\t\t\"impresionCodigo\": \"\",\n\t\t\t\"tipoOrientacion\" : \"\",\n\t\t\t\"desarrollo\" : \"\",\n\t\t\t\"logros\" : \"\"\n\t\t},\n\t\t\"responses\" : {\n            \"assistg1p1\" : \"3\",\n            \"assistg1p2\" : \"3\",\n            \"assistg1p4\" : \"3\"\n        },\n        \"assistAlcoholResult\" : \"3\",\n        \"assistOtherResult\" : 6,\n        \"attentionDate\" : \"2019-11-22 12:00 am\",\n        \"interventions\" : [ \n            \"8\", \n            \"9\", \n            \"11\", \n            \"12\"\n        ],\n        \"professionalcard\" : \"111111\",\n        \"state\" : \"pending\",\n        \"completionDate\" : \"2019-12-11T15:07:01.007Z\"\n\t\t}\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/surveys/data/5babf5f1428d8f2a2623d2db",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"surveys",
+						"data",
+						"5babf5f1428d8f2a2623d2db"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST: routeActivation. http://localhost:3000/canalizations/5df3ad1b41f13a39d10d7f89",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjdjODBkNGIyODE2MDQ4OTU2ZTE3MDciLCJ1c2VybmFtZSI6ImR1YmFuLnZhbmVnYXMiLCJuYW1lIjoiRHViYW4iLCJsYXN0bmFtZSI6IlZhbmVnYXMiLCJjb21wYW55IjoiU1NNIiwicHJvamVjdElkIjoiNWI2MzdlZWI0NDZiMjRhNWJmNDIxYTIwIiwicm9sZXMiOlsicHN5Y2hvbG9naXN0Il0sImNsYWltcyI6eyJjZWxscGhvbmUiOiIzMTE3MTY3Njc1IiwiZG9jdW1lbnQiOiIxMDM1MjI1NDQwIn0sImlhdCI6MTU3NjE2NzM2NiwiZXhwIjoxNTc2NzcyMTY2LCJhdWQiOiJuZXR1eGNsb3VkLmNvbSIsImlzcyI6Im54bG9naW4ubmV0dXhjbG91ZC5jb20ifQ.zalDBNtE4CyyrcV3eAd46TTD7X_fwKL1DDRS0EoqyMA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"canalizations\": [{\n\t\t\"eps\" : \"5b7d6075d5cc373394599247\",\n\t\t\"person\" : \"5b7d61bd93af53a2b61b58be\",\n\t\t\"attentionDate\":  \"2019-12-11 12:00 am\", \n\t\t\n\t\t\"risk\" : {\n\t\t\t\"routeActivationType\" : \"Activación de ruta\",\n\t        \"description\" : \"Conducta suicida\",\n\t        \"type\" : \"NA\"\n\t\t},\n\t\t\n\t\t\"followup\" : {\n\t\t\t\"attentionDate\":  \"2019-12-11 12:00 am\"\n\t        \n\t\t}\n\t\t\n\t}]\n\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/canalizations/5df8d53527ad2728d655c05a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"canalizations",
+						"5df8d53527ad2728d655c05a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET: canalizaciones de una survey. http://localhost:3000/canalizations/?survey=5df7968f3b05f02154193222",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.apsdev.netuxcloud.com/canalizations/?survey=5df7f98eb1612513d19d6940",
+					"protocol": "https",
+					"host": [
+						"api",
+						"apsdev",
+						"netuxcloud",
+						"com"
+					],
+					"path": [
+						"canalizations",
+						""
+					],
+					"query": [
+						{
+							"key": "survey",
+							"value": "5df7f98eb1612513d19d6940"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH: BriefInterventions. http://localhost:3000/surveys/data/5df15fe1d27b2e60abc7568c",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjdjODBkNGIyODE2MDQ4OTU2ZTE3MDciLCJ1c2VybmFtZSI6ImR1YmFuLnZhbmVnYXMiLCJuYW1lIjoiRHViYW4iLCJsYXN0bmFtZSI6IlZhbmVnYXMiLCJjb21wYW55IjoiU1NNIiwicHJvamVjdElkIjoiNWI2MzdlZWI0NDZiMjRhNWJmNDIxYTIwIiwicm9sZXMiOlsicHN5Y2hvbG9naXN0Il0sImNsYWltcyI6eyJjZWxscGhvbmUiOiIzMTE3MTY3Njc1IiwiZG9jdW1lbnQiOiIxMDM1MjI1NDQwIn0sImlhdCI6MTU4MTEwNjEyMSwiZXhwIjoxNTgxNzEwOTIxLCJhdWQiOiJuZXR1eGNsb3VkLmNvbSIsImlzcyI6Im54bG9naW4ubmV0dXhjbG91ZC5jb20ifQ.9i2oE-flDrPKnh0Mco3uBQ7wNBjrU_3Fv5bVjgPD-Rc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data\": {\n        \"initialForm\" : {\n            \"preForm\" : {\n                \"firstnameAcudiente\" : \"dd\",\n                \"lastnameAcudiente\" : \"dd\",\n                \"parentesco\" : \"\",\n                \"tipologiaFamiliar\" : \"\",\n                \"areaConflicto\" : \"si-mismo\",\n                \"motivoOrientacion\" : \"\",\n                \"metaOrientación\" : \"\",\n                \"descripcionConflicto\" : \"\",\n                \"habilidadSaludable\" : \"\"\n            },\n            \"postForm\" : {\n                \"impresionCodigo\" : \"\",\n                \"tipoOrientacion\" : \"\",\n                \"desarrollo\" : \"\",\n                \"logros\" : \"\"\n            },\n            \"responses\" : {\n                \"preguntap1\" : \"no\",\n                \"preguntap3\" : \"si\",\n                \"preguntap4\" : \"si\",\n                \"preguntag1p5\" : \"dd\",\n                \"preguntag1p6\" : \"si\",\n                \"preguntag1p7\" : \"si\",\n                \"preguntag1p8\" : \"si\",\n                \"preguntag1p9\" : \"si\",\n                \"preguntag1p10\" : \"no\",\n                \"preguntag1p11\" : \"si\",\n                \"preguntag1p12\" : \"si\",\n                \"preguntag1p13\" : \"si\",\n                \"preguntag1p14\" : \"1\",\n                \"preguntag1p15\" : \"1\"\n            },\n            \"attentionDate\" : \"2020-02-11T15:12:00.000Z\",\n            \"professionalcard\" : \"444333\",\n            \"interventions\" : [ \n                \"1-3-4-positiva\", \n                \"6-positiva\", \n                \"7-11-14-positiva\", \n                6, \n                \"12-positiva\", \n                \"15-positiva\"\n            ],\n            \"state\" : \"ended\",\n            \"completionDate\" : \"2020-02-11T15:14:24.017Z\",\n            \"createdBy\" : \"desarrollo@netuxtecnologia.com\"\n        },\n        \"briefInterventions\" : {\n            \"briefIntervention1\" : {\n                \"tipoOrientacion\" : \"priorizada\",\n                \"desarrollo\" : \"ss\",\n                \"logros\" : \"ss\",\n                \"attentionDate\" : \"2020-02-11T15:15:00.000Z\",\n                \"seguimiento\" : \"Se resolvió el caso\",\n                \"createdBy\" : \"desarrollo@netuxtecnologia.com\",\n                \"completionDate\" : \"2020-02-11T15:16:01.490Z\"\n            },\n             \"briefIntervention2\" : {\n                \"tipoOrientacion\" : \"priorizada\",\n                \"desarrollo\" : \"ss\",\n                \"logros\" : \"ss\",\n                \"attentionDate\" : \"2020-02-11T15:15:00.000Z\",\n                \"seguimiento\" : \"Se resolvió el caso\",\n                \"createdBy\" : \"desarrollo@netuxtecnologia.com\",\n                \"completionDate\" : \"2020-02-11T15:16:01.490Z\"\n            },\n            \"briefIntervention3\" : {\n                \"tipoOrientacion\" : \"priorizada\",\n                \"desarrollo\" : \"ss\",\n                \"logros\" : \"ss\",\n                \"attentionDate\" : \"2020-02-11T15:15:00.000Z\",\n                \"seguimiento\" : \"Se resolvió el caso\"\n                \n            }\n        \n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/surveys/5e42c453df8dee470a173f33",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"surveys",
+						"5e42c453df8dee470a173f33"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET: Validación fecha de última HC de una persona. http://localhost:3000/healthRecords/person/5cabce4ac75a4240c89dadfe",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YjdjODBmN2IyODE2MDQ4OTU2ZTE3MmQiLCJ1c2VybmFtZSI6Im1lbGlzYS5iZXRhbmN1cnAiLCJuYW1lIjoiTWVsaXNhIiwibGFzdG5hbWUiOiJCZXRhbmN1ciBQYWxhY2lvIiwiY29tcGFueSI6IlNTTSIsInByb2plY3RJZCI6IjViNjM3ZWViNDQ2YjI0YTViZjQyMWEyMCIsInJvbGVzIjpbImh5Z2llbmlzdCJdLCJjbGFpbXMiOnsiY2VsbHBob25lIjoiMzAxNTUzNjYwNCIsImRvY3VtZW50IjoiMTAzNTQyNzQwNiJ9LCJpYXQiOjE1ODAyMzc4MTYsImV4cCI6MTU4MDg0MjYxNiwiYXVkIjoibmV0dXhjbG91ZC5jb20iLCJpc3MiOiJueGxvZ2luLm5ldHV4Y2xvdWQuY29tIn0.DS-3ToqsOWGOEjz_U4Mq5tbgJkTPxWezyaxWh770t-0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/healthRecords/person/5ba51da74c0d0272e0e29515",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"healthRecords",
+						"person",
+						"5ba51da74c0d0272e0e29515"
+					]
+				},
+				"description": "Se valida si a una persona se le puede realizar un procedimiento y generar una HC de acuerdo a la fecha del último procedimiento realizado.\nSi se puede practicar \"allowed\" es true, de lo contrario será false."
+			},
+			"response": []
+		},
+		{
+			"name": "POST: crear HC. http://localhost:3000/healthRecords",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"survey\" :\"5e39d0b3de135d5660837c80\",\n\t\"person\" :{\n        \"_id\" : \"5df93ec6f1b746b20038bba7\",\n        \"document\" : \"00102952587\",\n        \"documentType\" : \"RC\",\n        \"birthdate\" : \"2000-10-29T00:00:00.000Z\",\n        \"createdAt\" : \"2019-12-17T20:47:02.246Z\",\n        \"firstname\" : \"MARIA\",\n        \"lastname\" : \"YEPES\",\n        \"middlename\" : \"FERNANDA\",\n        \"origin\" : \"ssm\",\n        \"secondLastname\" : \"PARELA\",\n        \"sex\" : \"F\",\n        \"socialSecurity\" : {\n            \"eps\" : \"5b7d6073d5cc373394599243\",\n            \"epsCode\" : \"EPS016\",\n            \"insuranceScheme\" : \"Contributivo\",\n            \"typeOfAffiliation\" : \"B\"\n        },\n        \"updatedAt\" : \"2020-02-04T20:11:37.134Z\",\n        \"phoneNumbers\" : {\n            \"home\" : \"4488554\"\n        },\n        \"address\" : \"CLL 103# 48A-80\",\n        \"birthplace\" : \"Medellin\",\n        \"civilStatus\" : \"0\",\n        \"educationLevel\" : \"7\",\n        \"neighborhood\" : \"Medellin\",\n        \"occupationCode\" : \"3\",\n        \"ageInDays\" : 7037,\n        \"ageInYears\" : 19,\n        \"ageInMonths\" : 231,\n        \"type\" : [ \n            \"F\", \n            \"J1\"\n        ]\n    },\n\t\"healthRecord\": {\n\t\t\"deleted\" : false,\n\t    \"type\" : \"HCFP\",\n\t    \"data\" : {\n\t        \"reasonConsultation\" : {\n\t            \"reasonConsultation\" : \"Toma de muestra de citología\",\n\t            \"currentIllness\" : \"na\"\n\t        },\n\t        \"gynecoObstetricHistory\" : {\n\t            \"menarcheAge\" : \"13\",\n\t            \"menstrualCycles\" : \"irregulares\",\n\t            \"menstrualPain\" : \"mestrual\",\n\t            \"fum\" : \"2014-05-06\",\n\t            \"g\" : \"1\",\n\t            \"p\" : \"-1\",\n\t            \"a\" : \"-1\",\n\t            \"c\" : \"-1\",\n\t            \"v\" : \"1\",\n\t            \"m\" : \"-1\",\n\t            \"lactating\" : \"no\",\n\t            \"exclusivebBreastFeeding\" : \"no\",\n\t            \"usedMac\" : \"AOC\"\n\t        },\n\t        \"sample\" : {\n\t            \"signConsent\" : \"si\",\n\t            \"processDescription\" : \"fffff\"\n\t        },\n\t        \"contraceptiveMethods\" : {\n            \"selectedMac\" : \"jadelle\"\n        }\n\t    },\n\t    \"createdBy\" : \"desarrollo@netuxtecnologia.com\",\n\t    \"createdByFullName\" : \"Desarrollo \",\n\t    \"createdByDocument\" : \"NA\",\n\t    \"attentionDate\" : \"2020-01-30T16:54:15.875Z\"\n\t},\n    \"signature\" : \"5d892fa0f9d7a82c8db0bbd5\",\n    \"createdAt\" : \"2020-01-07T16:56:24.774Z\",\n    \"updatedAt\" : \"2020-01-07T16:56:24.774Z\",\n    \"__v\" : 0\n\t\t\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/healthRecords",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"healthRecords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET: getCountries. http://localhost:3000/countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.apsdev.netuxcloud.com/countries",
+					"protocol": "https",
+					"host": [
+						"api",
+						"apsdev",
+						"netuxcloud",
+						"com"
+					],
+					"path": [
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST: crear persona. http://localhost:3000/persons",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstname\" : \"Prueba\",\n    \"middlename\" : \"hhh\",\n    \"lastname\" : \"Perez\",\n    \"secondLastname\" : \"hhh\",\n    \"documentType\" : \"CC\",\n    \"document\" : \"674521243\",\n    \"sex\" : \"F\",\n    \"birthdate\" : \"2004-06-02T00:00:00.000Z\",\n    \"zone\" : \"U\",\n    \"phoneNumbers\" : {\n        \"home\" : \"5565678\"\n    },\n    \"socialSecurity\" : {\n        \"eps\" : \"5b886419de510f2d71f8ef33\",\n        \"insuranceScheme\" : \"Subsidiado\",\n        \"epsCode\" : \"EPSI01\",\n        \"type\" : \"A\"\n    },\n    \"birthCountryCode\" : \"1\",\n    \"isoCountryCode\" : \"630\",\n    \"createdAt\" : \"2020-01-15T18:26:26.213Z\",\n    \"updatedAt\" : \"2020-01-15T18:26:26.213Z\",\n    \"__v\" : 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"persons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH: editar persona cuando se agrega a una visita. http://localhost:3000/persons/5cbe06cbc75a4240c89ddbf3",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"address\" : \"CR 51B 119 83\",\n\t\"zone\" : \"U\",\n\t\"neighborhood\": \"MEDELLIN\",\n    \"phoneNumbers\" : {\n        \"home\" : \"5565678\"\n    },\n    \"socialSecurity\" : {\n        \"eps\" : \"5b886419de510f2d71f8ef33\",\n        \"insuranceScheme\" : \"Subsidiado\",\n        \"epsCode\" : \"EPSI01\",\n        \"type\" : \"A\"\n    },\n    \"birthCountryCode\": \"1\",\n    \"isoCountryCode\" : \"124\"\n    \n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/persons/5e21a959efa0220ea848e9ca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"persons",
+						"5e21a959efa0220ea848e9ca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST: crear persona cuando se va iniciar una encuesta. http://localhost:3000/persons/create_with_survey",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"person\": {\n\t   \t \"firstname\" : \"Prueba\",\n\t    \"middlename\" : \"hhh\",\n\t    \"lastname\" : \"Perez\",\n\t    \"secondLastname\" : \"hhh\",\n\t    \"documentType\" : \"CC\",\n\t    \"document\" : \"674128453\",\n\t    \"sex\" : \"F\",\n\t    \"birthdate\" : \"2004-06-02T00:00:00.000Z\",\n\t    \"zone\" : \"U\",\n\t    \"phoneNumbers\" : {\n\t        \"home\" : \"5565678\"\n\t    },\n\t    \"socialSecurity\" : {\n\t        \"eps\" : \"5b886419de510f2d71f8ef33\",\n\t        \"insuranceScheme\" : \"Subsidiado\",\n\t        \"epsCode\" : \"EPSI01\",\n\t        \"type\" : \"A\"\n\t    },\n\t     \"birthCountryCode\" : \"900\",\n\t     \"isoCountryCode\" : \"124\"\n   },\n   \"survey\": {\n   \t\"environment\": \"Educative\",\n   \t\"entity\": \"5b7d5f92d5cc3733945991d1\",\n   \t\"visitIndex\": \"0\",\n   \t\"dimension\": \"SM\"\n   }\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/persons/create_with_survey",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"persons",
+						"create_with_survey"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST: Crear canalización. http://localhost:3000/canalizations",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\t\"healthRecords\": {\n\t\"0\": \"5e25a57626c54811943534e2\"\n\t},\n\t\"canalizations\": {\n\t\t\"0\":{\n\t\t\t\"person\": \"5b86c754de510f2d71f8e5a7\",\n\t\t\t\"maxTimeAppointment\": \"20d\",\n\t\t\t\"maxTimeEpsResponse\": \"NA\",\n\t\t\t\"risk\":{\n\t\t\t\t\"canalizationType\": \"Canalización salud bucal\",\n\t\t\t\t\"description\": \"Signos de caries visibles, dolor dental, sangrado o dolor en las encias\",\n\t\t\t\t\"type\": \"Medio\"\n\t\t\t}\n\t\t},\n\t\t\"state\": \"ended\",\n\t\t\"explanatoryNotes\": [],\n\t\t\"collaborators\": []\n\t},\n\t\"state\": \"ended\",\n\t\"sn\": 3,\n\t\"explanatoryNotes\":[],\n\t\"collaborators\": [],\n\t\n\t\"person\" : {\n        \"_id\" : \"5b86c754de510f2d71f8e5a7\",\n        \"phoneNumbers\" : {\n            \"home\" : \"5556666\"\n        },\n        \"firstname\" : \"Helen\",\n        \"middlename\" : \"Julieth\",\n        \"lastname\" : \"Vega\",\n        \"secondLastname\" : \"Parra\",\n        \"documentType\" : \"CE\",\n        \"document\" : \"04893110\",\n        \"sex\" : \"F\",\n        \"birthdate\" : \"2011-05-05T00:00:00.000Z\",\n        \"address\" : \"Cra 28# 71-9\",\n        \"commune\" : 3,\n        \"neighborhood\" : \"Manrique Oriental\",\n        \"createdAt\" : \"2018-08-29T16:18:28.986Z\",\n        \"updatedAt\" : \"2020-01-17T20:59:33.901Z\",\n        \"educationLevel\" : 3,\n        \"ethnicGroup\" : \"OT\",\n        \"ocupationCode\" : 9999,\n        \"ageInDays\" : 3179,\n        \"ageInYears\" : 8,\n        \"ageInMonths\" : 104,\n        \"type\" : [ \n            \"F\", \n            \"I\", \n            \"NG\"\n        ]\n    },\n    \"entity\": {\n    \t\n    },\n\t\n    \"visitIndex\" : 6,\n    \"dimension\": \"SB\",\n    \"environment\": \"Educative\",\n    \"createdBy\": \"desarrollo@netuxtecnologia.com\",\n    \"data\":{\n    \t\n    },\n    \"personCharacterization\": {},\n    \"createdAt\": \"2020-01-20T13:00:43.619Z\",\n    \"updatedAt\": \"020-01-20T13:04:54.536Z\",\n    \"_v\": 3,\n    \"endedDate\": \"020-01-20T13:04:54.499Z\"\n    \n    \n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/canalizations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"canalizations"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
